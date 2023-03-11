@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Response</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+
+<style>
+    body {
+
+        background-color: #0093E9;
+        background: linear-gradient(312deg, #0093E9 0%, #80D0C7 33%, #cfedd0 66%, #dfb1b1 100%);
+
+        background-repeat: no-repeat;
+
+
+    }
+
+    .result {
+        width: 80%;
+        border: 3px solid #004643;
+        height: fit-content;
+        margin: 0 auto;
+        max-width: 800px;
+        background-color: #e8e4e6;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 0.5em;
+        min-width: 320px;
+    }
+
+    .result>div {
+        border: 2px solid black;
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 0.3em;
+        margin-bottom: 3em;
+        background-color: aliceblue;
+        text-align: center;
+    }
+
+    .result label {
+        font-size: larger;
+        -webkit-text-stroke: 0.4px black;
+
+    }
+
+    .result>div p {
+        height: fit-content;
+        min-height: 1.5em;
+        padding: 0.2em 0.5em;
+        font-weight: bold;
+        font-size: large;
+    }
+</style>
+
+
+<body>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" style="width: 50%;margin: 0 auto;height: fit-content;
+    padding: 1em;margin-top: 2em;min-width: 310px;max-width: 650px;" id="pop_up">
+        <strong>Registration Complete</strong> <br> Dear <span id="student_name_in_popUP"
+            style="text-decoration: underline;"></span> , 
+        you are now successfully registered as a computer science student for the event of web development at Goa University.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="pop_up_btn"></button>
+    </div>
+
+
+    <br>
+    <div class="result" id="result">
+
+        <h1 style="text-align: center;margin-bottom: 0.5em;margin-top: 0.2em;font-family: 'Gill Sans', 'Gill Sans MT', 
+        Calibri, 'Trebuchet MS', sans-serif;
+        ">Your Resposnse</h1>
+
+
+        <div>
+            <label>Full Name: </label>
+            <p id="result_name"></p>
+        </div>
+
+        <div>
+            <label>Email: </label>
+            <p id="result_email"></p>
+        </div>
+
+
+        <div>
+            <label>State: </label>
+            <p id="result_state"></p>
+        </div>
+
+
+        <div>
+            <label>Gender: </label>
+            <p id="result_gender"></p>
+        </div>
+
+        <div>
+            <label>DOB: </label>
+            <p id="result_dob"></p>
+        </div>
+
+        <div>
+            <label>Address: </label>
+            <p id="result_address"></p>
+        </div>
+
+        <div>
+            <label>Phone Number: </label>
+            <p id="result_tel"></p>
+        </div>
+
+        <button
+            style="margin: 0 auto;display: block;padding: 0.2em 0.7em;background-color: #b7f7f3;margin-bottom: 0.3em;"><a
+                href="#" onclick="history.go(-1);
+" style="text-decoration: none;color: black;font-weight: bold;">Edit Response</a></button>
+
+
+    </div>
+    <br>
+
+
+    <script src="data.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!-- Author: Richard Mascarenas, Roll no : 2237 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST Registration form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+
+</head>
+
+
+<body>
+
+    <header>
+        <img src="only_logo.png" alt="Uni Logo">
+
+        <h1>GOA UNIVERSITY</h1>
+    </header>
+
+
+    <br>
+
+    <marquee style="min-height: 20px;background-color: yellow;border: 0.8px solid red;padding-top: 0.2em;"
+        direction="left">
+        <h3 style="color: red;">Kindly note: The last day of registration is 25 March 2023</h3>
+    </marquee>
+    <br>
+    <br>
+    <div class="container">
+
+        <h1>CST Registration form</h1>
+        <br>
+        <form id="full_form">
+
+
+            <div class="mb-3">
+                <label for="input_value" class="form-label">Enter Full Name</label>
+                <input type="text" class="form-control real_input" id="name_value" placeholder="Boika Parker" required
+                    autocomplete="off">
+
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="email_value" class="form-label">Email address</label>
+                <input type="email" class="form-control name_input" id="email_value" aria-describedby="emailHelp"
+                    placeholder="abc@email.com" required>
+
+            </div>
+
+            <div>
+
+                <label for="select_id" class="form-label">State</label>
+                <select class="form-select real_input" aria-label="Default select example" id="select_id" required
+                    style="border: 1.5px solid rgba(66, 65, 65, 0.753);">
+                    <option selected disabled>Select state</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Jharkand">Jharkand</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Kerala">Kerala</option>
+                </select>
+            </div>
+
+            <br>
+            <div class="form-check">
+                <label for="" style="font-weight: bold;">Gender</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Male"
+                        required>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Female"
+                        required>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Female
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Others"
+                        required>
+                    <label class="form-check-label" for="exampleRadios3">
+                        Others
+                    </label>
+                </div>
+
+                <br>
+                <div class="mb-3">
+
+                    <label for="input_date">DOB</label>
+                    <br>
+                    <input type="date" name="date" style="min-width: 180px;width: 100%;min-height: 2.4em;border-radius: 4px;
+                    padding-left: 1em;" id="input_date" required>
+
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="input_address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="input_address"
+                        placeholder="H.no 931 ,Rocky Second Court" required>
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="input_tel" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="input_tel" placeholder="985019371" required>
+
+                </div>
+
+
+                <br>
+
+
+                <div class="mb-3">
+                    <label for="password_value" class="form-label">Enter Password</label>
+                    <input type="password" class="form-control" id="password_value" minlength="6" maxlength="10"
+                        required autocapitalize="off">
+
+                </div>
+
+
+
+                <button id="bu" type="submit"
+                    style="margin: 0 auto;display: block;padding: 0.3em 0.5em;background-color: #78DEF6;">Submit</button>
+                <br>
+
+
+                <div style="display: none;" id="progress_block">
+                    <label for="loader" style="text-align: center;width: 100%;margin-bottom: 0.5em;">Loading your
+                        details</label>
+                    <div class="progress" style="min-height: 2.5em;outline: 0.5px solid grey;" id="loader">
+                        <div class="progress-bar" id="actual_progress_bar" role="progressbar" style="width: 0%;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+        </form>
+
+
+    </div>
+
+
+
+
+    <br>
+
+    <br>
+
+    </div>
+
+    <br><br>
+
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
